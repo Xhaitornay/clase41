@@ -35,12 +35,13 @@ class Form {
       var message = `
       Hola, ${this.input.value()}
       </br>Espera a que se una otro jugador...`;
+      this.greeting.html(message);
       playerCount += 1;
       player.name = this.input.value();
       player.index = playerCount;
-      player.addPlayer();// aaa
+      player.addPlayer();// AAA
       player.updateCount(playerCount); // BP
-      player.getDistance(); // aaa
+      player.getDistance(); // AAA
     });
   }
 
